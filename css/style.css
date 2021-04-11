@@ -1,0 +1,342 @@
+#skip a {
+  position: absolute;
+  left: -1000px;
+  border: 1px solid orange;
+}
+
+#skip a:focus {
+  position: static;
+  left: 10px;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15pt;
+  line-height: 1.5;
+}
+
+header {
+  font-size: 25pt;
+  animation-duration:4s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_not_working{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+  }
+}
+
+  nav ul{
+    display: block;
+    overflow: hidden;
+    background-color: #F5F5F5;
+  }
+
+  .nav_link_items{
+    font-size: 10px;
+    bottom: 0;
+  }
+
+  .nav_link_items span{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .nav_link_items:hover {
+    color: blue;
+  }
+  
+  .nav_link_items:active {
+    color: red;
+  } 
+
+  .logo{
+    float: left;
+    padding: 10px;
+    max-width: 10%;
+  }
+
+  .info{
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .portfolio_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .portfolio {
+    padding: 3px;
+    max-width: 85%;
+  }
+
+  .quotes_grid {
+    display: grid;
+    margin:10px;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    position: relative;
+  }
+  .quotes_grid {
+    font-weight: 1000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quotes_grid span {
+    font-style: italic;
+  }
+
+  .grid-item1 {
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #0000FF;
+  }
+
+  .grid-item2 {
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    color: #008000;
+  }
+
+  .grid-item3 {
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: #FF0000;
+  }
+
+  .grid-item4 {
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #FFA500;
+  }
+
+  .grid-item5 {
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    color: #9400D3;
+  }
+
+  footer {
+    font-size: 5pt;
+  }
+  
+  .up{
+    font-size:8pt;
+  }
+
+  .avpersonalpage{
+    max-width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  
+  .avuserquizzes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .avuserquiz {
+    padding: 3px;
+    max-width:10%
+  }
+
+  .activote{
+    font-size: 8px;
+    padding: 10px;
+  }
+
+  .activote span{
+    font-weight: bold;
+  }
+
+  .avfrontimage{
+    max-width:80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+
+  .activote_proto{
+    font-size: 8px;
+    padding: 10px;
+  }
+
+  .photo{
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+
+  .photogalimages{
+    text-align: center;
+  }
+
+  .port_pics{
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .me{
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .mixtape{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .mixtape_bigpicture{
+    font-size: 8px;
+    padding: 10px;
+  }
+
+  .mixtape_bigpicture > ul{
+  list-style-type: none;
+  }
+
+  .mixtape_bigpicture span{
+    font-weight: bold;
+  }
+
+  .mixtape_finalwords{
+    font-size: 8px;
+    padding: 10px;
+  }
+  .mixtape_finalwords > h3{
+    font-size: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .me_para1{
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+
+  .me_para2{
+    font-size: 8px;
+  }
+  
+
+  @media (min-width: 481px) {
+
+    header {
+      display: flex;
+      flex-direction:row;
+      align-items: left;
+      justify-content: space-between;
+      font-size: 30pt;
+    }
+  
+    nav li{
+      float: right;
+    }
+  
+    nav li a{
+      display: block;
+      color: black;
+      padding: 5px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .nav_link_items{
+      font-size: 10pt;
+
+    }
+  
+    #navbar{
+      overflow: hidden;
+      display: block;
+    }
+
+  }
+
+  @media screen and (min-width: 1000px){
+
+    header {
+      display: flex;
+      flex-direction:row;
+      align-items: left;
+      justify-content: space-between;
+      font-size: 100pt;
+    }
+  
+    
+    nav li{
+      float: right;
+    }
+  
+    nav li a{
+      display: block;
+      color: black;
+      padding: 5px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+
+    #navbar{
+      overflow: hidden;
+      display: block;
+    }
+  }
+    
+  
+
+
+
+
+
+
+
